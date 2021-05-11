@@ -34,8 +34,46 @@ Ajouter les modifications d'un fichier à soumettre
 $ git add <FILENAME>
 
 Pour ajouter toutes les modifications d'un seul coup
-$ git add 
+$ git add .
 
 Pour soumettre les modifications que vous avez ajoutées avec un court message décrivant les modifications
 $ git commit -m "your commit message"
 
+Afficher le numéro et le nom des commits
+$ git log --pretty=oneline
+
+La commande checkout permet de faire plusieurs choses
+
+Passer de branche en branche (on en parlera dans un prochain chapitre)
+Revenir sur un fichier par rapport à un commit
+Revenir sur un commit
+
+git checkout <commit>
+ 
+ revert
+Revert permet d'inverser un commit.
+
+git revert <commit>
+ 
+ reset
+Tout comme la commande checkout, la commande reset permet de faire plusieurs choses à la fois. En revanche il faudra faire très attention lors de l'utilisation de cette commande car elle altère l'historique et peut dans certains cas supprimer vos modifications (si vous voyez --hard, vérifiez 6 fois ce que vous voulez faire).
+
+git reset <fichier>
+ 
+Supprime un fichier de la zone de staging, mais ne supprime pas les modifications qui sont faites
+
+git reset
+
+Supprime tous les fichiers de la zone de staging, sans supprimer les modifications.
+
+git reset --hard
+
+revenir d'une branche head sur la branche master
+
+$ git checkout master
+
+créer une étiquette
+$ git tag -a v1.4 -m 'ma version 1.4'
+
+Lister vos étiquettes
+$ git tag
