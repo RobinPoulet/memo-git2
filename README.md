@@ -92,5 +92,6 @@ git push origin <nom du tag>
 ensuite pour pousser un fichier après commit
 $ git push 
 
- 
+ récupérer un clone d'un repo distant
+ $ git clone <URL du repo>
 
