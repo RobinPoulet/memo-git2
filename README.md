@@ -77,3 +77,20 @@ $ git tag -a v1.4 -m 'ma version 1.4'
 
 Lister vos étiquettes
 $ git tag
+
+pour revenir de la branche head sur la branche master
+git switch -
+
+pour pousser un tag
+git push origin <nom du tag>
+ 
+ pousser tous les tags = git push --tag
+ 
+ pour pousser un fichier la première fois sur la branche main  dans origin
+ $ git push -u origin main
+
+ensuite pour pousser un fichier après commit
+$ git push 
+
+ 
+
